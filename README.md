@@ -12,7 +12,7 @@ The project consists of 3 different type of applications.
 
 ## Dependencies
 
-In this project, MongoDB is used as a database. In order to run the project, the environment must contain mongoDb and mongo server must be run before applications.
+In this project, [MongoDB](https://www.mongodb.com/) is used as a database. In order to run the project, the environment must contain mongoDb and mongo server must be run before applications.
 
 Each wallet and miner applications has their own databases. Applications read connection information from "connectionString" and "dbName" fields in <appSettings> section stored in app.config file.
 
@@ -28,11 +28,11 @@ Since wallet and miner applciations has their own database on mongoDB, they will
 
 In this project, SHA256 is used as hash function and ECDSA to sign transactions. Transactions cannot be created without signature and signatures cannot be created without a public-private key pair. Like connection info, applications also gets their private and public keys from app.config file under <appSettings> section. 
   
-Each applcation must have their own public and private key. So in order to create these key pairs, a Keygen application will be helpful.
+Each applcation must have their own public and private key. So in order to create these key pairs, a Keygen application will be helpful. For digital signature and public-private key pair creation, [babel licensing](http://www.babelfor.net/) is used.
 
 ## Transactions
 
-Transactions basicaly must have a valid amount, a sender, a receiver and a valid digital signature on it. In the project, transaction mechanism is based on Satoshi's mint based transaction approach. 
+Transactions basicaly must have a valid amount, a sender, a receiver and a valid digital signature on it. In the project, transaction mechanism is based on Satoshi's [mint based transaction approach](https://bitcoin.org/bitcoin.pdf). 
 
 ## Assets
 
@@ -53,8 +53,6 @@ The project is a sample to examine blockchain basics. First of all, a blockchain
 In PoW based protocols, difficulty should be updated dynamically in specific periods. In this project, difficult updates are ignored.
 
 Also other public key validations, mining rewards are ignored to examine main points of a protocol. Since there is no mining rewards, assets must be set at the begining of the protocol and assigned to the users' public keys in the genesis block.
-
-peer updates
 
 
 
