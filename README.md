@@ -5,6 +5,14 @@ This is a peer-to-peer digital asset transfer simulation project on a sample blo
 ## Table of Contents
 
 * [Overview](https://github.com/salihcemil/WalletApp#overview)
+* [Dependencies](https://github.com/salihcemil/WalletApp#dependencies)
+* [Running Order](https://github.com/salihcemil/WalletApp#running-order)
+* [Cryptography](https://github.com/salihcemil/WalletApp#cryptography)
+* [Transactions](https://github.com/salihcemil/WalletApp#transactions)
+* [Assets](https://github.com/salihcemil/WalletApp#assets)
+* [Consensus](https://github.com/salihcemil/WalletApp#consensus)
+* [Communication Between Nodes](https://github.com/salihcemil/WalletApp#communication-between-nodes)
+* [Limitations](https://github.com/salihcemil/WalletApp#limitations)
 
 ## Overview
 
