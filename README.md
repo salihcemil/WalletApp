@@ -2,6 +2,10 @@
 
 This is a peer-to-peer digital asset transfer simulation project on a sample blockchain protocol.
 
+## Table of Contents
+
+* [Overview](https://github.com/salihcemil/WalletApp#overview)
+
 ## Overview
 
 The project consists of 3 different type of applications.
