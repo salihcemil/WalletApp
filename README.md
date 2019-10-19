@@ -42,6 +42,10 @@ As it mentioned above, mint based transaction is used. This means, in each trans
 
 Since it is based on Bitcoin's Blockchain, the Proof of Work is used. Difficulty index is symbolically and hardcodedly set to "5" in miner class in business project. Blocks are simply serialized and nonce value is added to the end of it and programatically increasing for mining.
 
+## Communication Between Nodes
+
+Dispatcher app is responsible for the communication. It gets messages and broadcasts them to the clients who are connected. In order to get this real-time messaging feature, we used classic client-server architecture by using [SignalR](https://dotnet.microsoft.com/apps/aspnet/signalr).
+
 ## Limitations
 
 The project is a sample to examine blockchain basics. First of all, a blockchain protocol is a Distributed Ledger Technology. And to distribute the ledgers, it must be set on a real p2p network. Although p2p networks are vital for DLT, there is not an advanced about it with blockchain protocols. Because of that, the project mimics as a p2p network.
@@ -49,6 +53,8 @@ The project is a sample to examine blockchain basics. First of all, a blockchain
 In PoW based protocols, difficulty should be updated dynamically in specific periods. In this project, difficult updates are ignored.
 
 Also other public key validations, mining rewards are ignored to examine main points of a protocol. Since there is no mining rewards, assets must be set at the begining of the protocol and assigned to the users' public keys in the genesis block.
+
+peer updates
 
 
 
